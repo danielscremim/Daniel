@@ -32,3 +32,12 @@ alert(user.name)
       PascalCase
       snake_case
 */
+
+
+      /*function changeSocialMediaLinks() {
+        
+        document.getElementById('textArea').
+        textContent = 'Estudando sempre para melhorar'
+        -----------------------------------------------------
+        textArea.textContent =
+          'Forma secundária e simplificada de alterar o DOM'
