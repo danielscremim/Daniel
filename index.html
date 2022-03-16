@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Scremim - DoWhile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--
+  Este é um comentário
+
+  HTML > HyperText - Texto com links 
+  Markup - Marcação tags e etc...
+  Language - Regras de uma linguagem
+    -->
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="images/build.svg" alt="Selo rocketseat" />
+          </span>
+          <img src="images/foto.svg" alt="Foto pessoal" />
+        </div>
+        <h1>Daniel Scremim</h1>
+        <a href="https://www.github.com/danielscremim">
+          <img src="images/github.svg" alt="ícone github" /> @DanielScremim</a
+        >
+
+        <p id="textArea">An instructor focused on helping pople start programming for web</p>
+
+        <ul>
+          <li>
+            <a href="https://youtube.com" target="_blank">
+              <img src="images/youtube.svg" alt="ícone youtube" />
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank">
+              <img src="images/instagram.svg" alt="ícone instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com" target="_blank">
+              <img src="images/facebook.svg" alt="ícone facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <img src="images/twitter.svg" alt="ícone twitter" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script>
+      const links = {
+        github: 'daniel.scremim',
+        youtube: 'teste',
+        facebook: 'daniel1scremim',
+        twitter: 'daniel2scremim',
+        instagram: 'daniel3scremim'
+      }
+
+      function changeSocialMediaLinks() {
+        document.getElementById('textArea').
+        textContent = 'Estudando sempre para melhorar'
+      }
+
+      changeSocialMediaLinks()
+    </script>
+  </body>
+</html>
