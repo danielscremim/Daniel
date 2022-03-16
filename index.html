@@ -34,25 +34,27 @@
           <img src="images/github.svg" alt="ícone github" /> @DanielScremim</a
         >
 
-        <p id="textArea">An instructor focused on helping pople start programming for web</p>
+        <p id="textArea">
+          An instructor focused on helping pople start programming for web
+        </p>
 
-        <ul>
-          <li>
+        <ul id="socialLinks">
+          <li class="youtube">
             <a href="https://youtube.com" target="_blank">
               <img src="images/youtube.svg" alt="ícone youtube" />
             </a>
           </li>
-          <li>
+          <li class="instagram">
             <a href="https://instagram.com" target="_blank">
               <img src="images/instagram.svg" alt="ícone instagram" />
             </a>
           </li>
-          <li>
+          <li class="facebook">
             <a href="https://facebook.com" target="_blank">
               <img src="images/facebook.svg" alt="ícone facebook" />
             </a>
           </li>
-          <li>
+          <li class="twitter">
             <a href="https://twitter.com" target="_blank">
               <img src="images/twitter.svg" alt="ícone twitter" />
             </a>
@@ -70,11 +72,23 @@
         instagram: 'daniel3scremim'
       }
 
-      function changeSocialMediaLinks() {
+      /*function changeSocialMediaLinks() {
+        
         document.getElementById('textArea').
         textContent = 'Estudando sempre para melhorar'
+        -----------------------------------------------------
+        textArea.textContent =
+          'Forma secundária e simplificada de alterar o DOM'
+      */
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.textContent.children) {
+          const social = li.getAttribute('class')
+          li.children[0].href = `https://${social}.com/${links[social]}`
+          alert()
+        }
       }
 
+      // 
       changeSocialMediaLinks()
     </script>
   </body>
