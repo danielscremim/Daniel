@@ -56,26 +56,6 @@
       </div>
     </main>
 
-    <script>
-      const links = {
-        github: 'daniel.scremim',
-        youtube: 'teste',
-        facebook: 'daniel1scremim',
-        twitter: 'daniel2scremim',
-        instagram: 'daniel3scremim'
-      }
-
-      */
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.textContent.children) {
-          const social = li.getAttribute('class')
-          li.children[0].href = `https://${social}.com/${links[social]}`
-          alert()
-        }
-      }
-
-      //
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

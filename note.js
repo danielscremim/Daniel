@@ -41,3 +41,12 @@ alert(user.name)
         -----------------------------------------------------
         textArea.textContent =
           'Forma secundária e simplificada de alterar o DOM'
+
+          //ARROW FUNCTION
+function nomeFuncao(argumentos){
+  //code
+}
+
+argumento => {
+  
+}
