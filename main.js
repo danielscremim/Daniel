@@ -1,31 +1,35 @@
-const links = {
-  github: 'daniel.scremim',
-  youtube: 'teste',
-  facebook: 'daniel1scremim',
-  twitter: 'daniel2scremim',
-  instagram: 'daniel3scremim'
+
+
+const LinksSocialMedia = {
+  github: 'danielscremim',
+  youtube: 'danielscremim',
+  facebook: 'daniielscremim',
+  instagram: 'danielscremim',
+  twitter: 'scremim'
 }
 
-*/
 function changeSocialMediaLinks() {
-  for (let li of socialLinks.textContent.children) {
+  for (let li of socialLinks.children) {
     const social = li.getAttribute('class')
-    li.children[0].href = `https://${social}.com/${links[social]}`
+
+    li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
   }
 }
 
 changeSocialMediaLinks()
 
-function getGitHubProfileInfos(){
-  const url = `https://api.github.com/users/${links.github}`
+function getGitHubProfileInfos() {
+  const url = `https://api.github.com/users/${LinksSocialMedia.github}`
 
-  fetch (url)
-  .then(Response => Response.json())
-  .then(data => (data.name))
-
-  for (let name of socialLinks.textContent.children)
-    const 
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      userName.textContent = data.name
+      userBio.textContent = data.bio
+      userLink.href = data.html_url
+      UserImage.src = data.avatar_url
+      userLogin.textContent = data.login
+    })
 }
 
 getGitHubProfileInfos()
-

@@ -49,4 +49,73 @@ function nomeFuncao(argumentos){
 
 argumento => {
   
+---------------------------------
+/*const links = {
+  github: 'danielscremim',
+  youtube: 'teste',
+  facebook: 'daniel1scremim',
+  twitter: 'daniel2scremim',
+  instagram: 'daniel3scremim'
 }
+
+function changeSocialMediaLinks() {
+  for (let li of socialLinks.textContent.children) {
+    const social = li.getAttribute('class')
+
+    li.children[0].href = `https://${social}.com/${links[social]}`
+  }
+}
+
+changeSocialMediaLinks()
+
+function getGitHubProfileInfos() {
+  const url = `https://api.github.com/users/${links.github}`
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      userName.textContent = data.name
+      userBio.textContent = data.bio
+    })
+}
+
+
+getGitHubProfileInfos()
+
+
+
+const LinksSocialMedia = {
+  github: 'danielscremim',
+  youtube: 'teste',
+  facebook: 'daniel1scremim',
+  twitter: 'daniel2scremim',
+  instagram: 'daniel3scremim'
+}
+
+function changeSocialMediaLinks() {
+  for (let li of LinksSocialMedia.first ){
+    const social = li.getAttribute('class')
+
+    li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+  }
+}
+
+changeSocialMediaLinks()
+
+function getGitHubProfileInfos() {
+  const url = `https://api.github.com/users/${LinksSocialMedia.github}`
+}
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      userName.textContent = data.name
+      userBio.textContent = data.bio
+      userLink.href = data.html_url
+      UserImage.src = data.avatar_url
+      userLogin.textContent = data.login
+    })
+
+getGitHubProfileInfos()
+
+*/
